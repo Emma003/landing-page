@@ -1,3 +1,5 @@
+/*The first part will mostly be the layout and the size (flexbox related stuff)*/
+
 body {
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +16,6 @@ body {
     padding-right: 10%;
     padding-bottom: 5%;
     row-gap: 50px;
-    
 }
 
 .header-right {
@@ -30,103 +31,161 @@ body {
 
 .bottom {
     display: flex;
-    justify-content: flex-start
+    gap: 10px;
+
 }
 
 .left {
     display: flex;
+    
     flex-direction: column;
-    flex-shrink: 0;
+    flex-shrink: 1;
     gap: 20px;
     width: 50%;
 }
 
 #right {
+    
     display: flex;
     width: 50%;
 }
 
 .bottom img {
-    height: 236px;
+    height: auto;
     width: 100%;
 }
 
 .one {
     text-align: center;
-    padding: 20px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-
 }
 
 .container {
     display: flex;
     justify-content: center;
-    
     margin: auto;
     width: 70%;
-    
-    border: 2px solid green;
 }
-
-
 
 .info img {
     width: 100%;
     height: 100px;
-    border: 2px solid yellow;
+    border-radius: 10px;
 }
 
 .info {
-    border: 2px solid red;
-    
     width: 25%;
-    
+    margin: 10px 10px;
 }
-
-
 
 .two {
     display: flex;
     background-color: #e5e7eb;
-    padding: 20px;
-    flex-flow: column wrap;
+    padding: 50px;
+    justify-content: center;
+}
 
-    
+.poem {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
 }
 
 .quote {
-    display: flex;
-    width: 350px;
-    flex: 0;
-    align-self: center;
-    text-align: center;
+    text-align: start;
 }
 
 .author {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1 1 auto;
-    margin-right: 220px;
+    text-align: end;
 }
 
 .three {
     display: flex;
-    padding: 20px;
+    padding: 40px;
     justify-content: center;
+    align-items: center;
 }
 
 .blue {
     display: flex;
     background-color: #3882f6;
-    padding: 30px 40px;
+    justify-content: center;
+    width: 70%;
+    padding: 20px 10px;
     color: white;
+    border-radius: 10px;
+    column-gap: 10px;
 }
 
 .footer {
     display: flex;
     background-color: #1F2937;
+    color: #e5e7eb;
     padding: 20px;
     justify-content: center;
 }
+
+/* The next part will be about font sizes, colors and rounded borders */
+
+.header-left {
+    font-size: 24px;
+}
+
+.header-right {
+    font-size: 18px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.subtitle {
+    font-size: 18px;
+}
+
+.information {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.author {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.call {
+    font-weight: bolder;
+}
+
+.direction {
+    font-weight: normal;
+}
+
+.header button {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border-radius: 10px;
+    border: #3882f6;
+    padding: 5px 15px;
+}
+
+.three button {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    padding: 5px 15px;
+}
+
+
