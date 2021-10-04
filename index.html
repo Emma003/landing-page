@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
-    <!--Don't forget to add CSS link-->>
-
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <!--The page is gonna be split in 5 sections: header, footer and three middle sections we're gonna name .one .two .three
 The header will contain another box, upper bound by "header logo" and lower bound by the "sign up" button.
@@ -20,11 +19,14 @@ There'll be another one within that -->
     <div class="header">
 
         <div class="top">
-            <div class="header-logo">Header logo</div>
+            <div class="header-left">Header logo</div>
 
-            <div class="header-link">header link one</div>
-            <div class="header-link">header link two</div>
-            <div class="header-link">header link three</div>
+            <div class="header-right">
+                <div class="header-link">header link one</div>
+                <div class="header-link">header link two</div>
+                <div class="header-link">header link three</div>
+            </div>
+                
         </div>
 
         <div class="bottom">
@@ -35,7 +37,7 @@ There'll be another one within that -->
                 <div class="button"><button> Sign up</button></div>
             </div>
             
-            <div class="right"><img src="img/poster.png" alt="This is a placeholder for an image"></div>
+            <div id="right"><img src="img/poster.png" alt="This is a placeholder for an image"></div>
              
         </div>
 
@@ -46,20 +48,33 @@ There'll be another one within that -->
     <!--First middle area (white background)-->
     <div class="one">
 
-        <div class="info">Some random information</div>
+        <div class="information">Some random information</div>
+        <div class="container">
+            
+            <div class="info">
+                <img src="img/image_1.jpg" alt="A green plant">
+                <div class="text">This is some subtext under an illustration or image.</div>
+            </div>
 
-        <img src="img/image_1.jpg" alt="A green plant">
-        <div class="text">This is some subtext under an illustration or image.</div>
+            <div class="info">
+                <img src="img/image_2.jpg" alt="Water">
+                <div class="text">This is some subtext under an illustration or image.</div>
+            </div>
+            
+            <div class="info">
+                <img src="img/image_3.jpg" alt="A glass of lemon water">
+                <div class="text">This is some subtext under an illustration or image.</div>
+            </div>
+            
 
-        <img src="img/image_2.jpg" alt="Water">
-        <div class="text">This is some subtext under an illustration or image.</div>
+            <div class="info">
+                <img src="img/image_4.jpg" alt="A green car">
+                <div class="text">This is some subtext under an illustration or image.</div>
+            </div>
+                    
 
-        <img src="img/image_3.jpg" alt="A glass of lemon water">
-        <div class="text">This is some subtext under an illustration or image.</div>
-
-        <img src="img/image_4.jpg" alt="A green car">
-        <div class="text">This is some subtext under an illustration or image.</div>
-
+        </div>
+        </div>
     </div>
         
     <!--Second middle area (grey background)-->
